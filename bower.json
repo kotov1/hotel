@@ -1,0 +1,21 @@
+{
+  "name": "green galaxy party",
+  "description": "verstka v 2",
+  "main": "index.js",
+  "authors": [
+    "PP"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}
