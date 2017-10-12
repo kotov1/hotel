@@ -4,26 +4,92 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+
+
+
+
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+
+	.nav
+		ul
+			text-align: center
+
+
 	/**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+
+	.nav
+		height: 100%
+		display: none
+		min-width: 260px
+		margin: 70px auto 25px
+		float: right
+		// max-width: 50%
+		
+		ul
+			display: block
+			background-color: rgba(0,0,0,.1) 
+			 
+		li 
+			display: block
+			padding: 0
+			text-align: center
+			opacity: .8
+			border-bottom: 1px solid rgba(255,255,255,.9)
+			
+			&:hover
+					background-color: rgba(0,0,0,.3) 
+
+		a
+			display: inline-block
+			padding: 10px 0
+			text-transform: uppercase
+			// font-size: 1.5em 
+			transition: all .5s
+			
+			&::after
+				display: none
+			
+
+	.toggle-menu
+		display: inline-block
+
+	/**/
+
+
+@media only screen and (max-width : 576px)
+
+
+
+
+
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+
+
+
+
 	/**/
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
+
+
+
+
+
 	/**/
 
 
