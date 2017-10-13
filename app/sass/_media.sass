@@ -5,6 +5,45 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 
+	.slider
+
+		.slide
+			min-height: 700px 
+			
+			&2__img
+				background-position: center
+
+
+
+	form
+		padding: 15px 0 
+		
+	.input-wrap
+		flex-direction: column
+		-webkit-justify-content: space-between 
+		justify-content: space-between 
+		-webkit-align-items: center 
+		align-items: center 
+		
+		select, input
+			margin: 0
+			width: 100%
+			
+			
+		select
+			// margin-bottom: 10px
+		
+
+	.about
+		line-height: 1.2
+		
+		.img-wrap
+			img
+				max-width: 150% 
+				
+		.hotel
+			.timetable
+				margin-top: 30px 
 
 
 
@@ -18,6 +57,52 @@
 		ul
 			text-align: center
 
+	.slider
+		font-size: 0.9em
+		
+		.slide3_heading
+			top: 40%
+
+		.slide4_heading
+			top: 35%
+			
+			h1
+				margin-top: 0
+				margin-bottom: 20px 
+				
+			.heading_date
+				margin-top: 0
+		
+
+	.about
+		padding: 10px 0
+		
+		.img-wrap
+			img
+				max-width: 100% 
+				
+		.hotel
+
+			h3, .timetable_list, .atemption
+				text-align: center
+			
+			h3
+				margin-top: 20px 
+
+			.timetable
+				padding-right: 0
+
+			ul.timetable_list
+				width: 50%
+				margin: 0 auto 15px
+				
+				li
+					padding-left: 0 
+
+
+
+
+
 
 	/**/
 
@@ -25,17 +110,22 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+
+	// ------------------------- menu start ----------------------
 	.nav
 		height: 100%
 		display: none
 		min-width: 260px
 		margin: 70px auto 25px
+		position: fixed
+		z-index: 9
 		float: right
-		// max-width: 50%
+
 		
 		ul
 			display: block
-			background-color: rgba(0,0,0,.1) 
+			// background-color: rgba(0,0,0,.1)
+			background-color: #FFF  
 			 
 		li 
 			display: block
@@ -51,23 +141,63 @@
 			display: inline-block
 			padding: 10px 0
 			text-transform: uppercase
-			// font-size: 1.5em 
 			transition: all .5s
 			
 			&::after
 				display: none
 			
-
 	.toggle-menu
 		display: inline-block
+		right: 10% 
+	// ------------------------- menu end ----------------------
+
+
+	.slider
+		font-size: .7em 
+		
+		.slide
+			min-height: 500px 
+		
+			&__img
+				background-size: auto
+				
+			&1__img
+				background-position: -500px 
+		
+			&_heading
+				top: 30%
+
+
+
+	.about
+		.img-wrap
+			&::after
+				background-size: 60% 100%
+				
+		.hotel
+
+			ul.timetable_list
+				width: 70%
+				margin: 0 auto 15px
+
+
+
+
+
+
+
+
 
 	/**/
 
 
 @media only screen and (max-width : 576px)
-
-
-
+	
+	.slider
+		font-size: .6em
+		 
+		.slide_heading
+			top: 20%
 
 
 	/**/
@@ -76,9 +206,40 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+	.slider
+
+		.slide
+			&_heading
+				h2
+					font-size: 37px
+					
+				.heading_date
+					font-size: 1.4em 
+					 		
+			&2_heading
+				.dear-friends
+					line-height: 1
+				.text
+					margin-bottom: 45px 
+					
 
 
+	.about
+		font-size: .9em 
+		line-height: 1.3
+		.img-wrap
+			&::after
+				background-size: 60% 100%
+				
+		.hotel
 
+			ul.timetable_list
+				width: 80%
+				margin: 0 auto 15px
+				font-size: 1.1em 
+				
+				li
+					padding-left: 40px
 
 	/**/
 

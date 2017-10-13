@@ -66,13 +66,13 @@ HEADER BEGIN
 		<div class="owl-carousel">
 
 			<div class="slide">
-				<div class="slide__img slide__img-1"></div>
-				<div class="slide_heading slide_heading-1">
+				<div class="slide__img slide1__img"></div>
+				<div class="slide_heading slide1_heading">
 					<div class="container">
 
 						<div class="row">
 							<div class="col-lg-12">
-								<h1>Самая грандиозная Новогодняя вечеринка 18+ в галактике </h1>
+								<h1>Самая грандиозная Новогодняя вечеринка 18+<br> в галактике </h1>
 							</div>
 						</div>
 
@@ -86,8 +86,8 @@ HEADER BEGIN
 			</div>
 
 			<div class="slide">
-				<div class="slide__img slide__img-2"></div>
-				<div class="slide_heading slide_heading-2">
+				<div class="slide__img slide2__img"></div>
+				<div class="slide_heading slide2_heading">
 					<!-- <div class="container"> -->
 						<!-- <div class="row"> -->
 							<!-- <div class="col-lg-12"> -->
@@ -102,12 +102,12 @@ HEADER BEGIN
 										</div>
 									</div>
 								</div>
-
+								
 								<div class="heading_bottom">
 									<div class="container">
 										<div class="row">
 											<div class="col-lg-12">
-												<p class="text">Пусть сбудутся все наши мечты, чистые помыслы и добрые намерения! Пусть в каждом доме царят радость и любовь. Пусть становятся краше и привлекательней дорогие нашему сердцу Галактики, планеты и города. Мира и процветания нашей общей, великой Родине - России. Счастья вам. Здоровья. Благополучия. С праздником! </p>
+												<p class="text">Пусть сбудутся все наши мечты, чистые помыслы и добрые намерения!<br> Пусть в каждом доме царят радость и любовь. Пусть становятся краше и привлекательней дорогие нашему сердцу Галактики, планеты и города.<br> Мира и процветания нашей общей, великой Родине - России.<br> Счастья вам. Здоровья. Благополучия. С праздником! </p>
 												<p class="congratulation">С Новым, 2018, годом!</p>
 											</div>
 										</div>
@@ -121,35 +121,35 @@ HEADER BEGIN
 			</div>
 
 			<div class="slide">
-				<div class="slide__img slide__img-3"></div>
-				<div class="slide_heading slide_heading-3">
+				<div class="slide__img slide3__img"></div>
+				<div class="slide_heading slide3_heading">
 					<div class="container">
 
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>GreenGalaxyParty2018</h2>
-								<p>3D Tinder 18+</p>
-								<p>новогодний хит парад инопланетян</p>
-								<p>31 декабря 2017 года - 08 января 2018 года</p>
-								<p class="heading_address">Московская область, Красногорский район, отель «Alliance Greenwood 4*»</p>
+								<h1>GreenGalaxyParty2018</h1>
+								<p class="heading_subtittle">3D Tinder 18+</p>
+								<p class="heading_hit">новогодний хит парад инопланетян</p>
+								<p class="heading_date">31 декабря 2017 года - 08 января 2018 года</p>
 							</div>
 						</div>
 
 					</div>
 				</div>
+				<p class="heading_address">Московская область, Красногорский район, отель «Alliance Greenwood 4*»</p>
 			</div>
 
 			<div class="slide">
-				<div class="slide__img slide__img-4"></div>
-				<div class="slide_heading slide_heading-4">
+				<div class="slide__img slide4__img"></div>
+				<div class="slide_heading slide4_heading">
 					<div class="container">
 						<div class="row">
 
 							<div class="col-lg-12">
-								<h2>Самая грандиозная встреча нового года в подмосковье для все семьи</h2>
-								<p>приключения в масштабах вселенной</p>
-								<p>+ хит парад инопланетян</p>
-								<p>31 декабря 2017 года - 08 января 2018 года</p>
+								<h1>Самая грандиозная встреча нового года в подмосковье для все семьи</h1>
+								<p class="heading_subtittle">приключения в масштабах вселенной</p>
+								<p class="heading_hit">+ хит парад инопланетян</p>
+								<p class="heading_date">31 декабря 2017 года - 08 января 2018 года</p>
 							</div>
 
 						</div>
@@ -159,14 +159,191 @@ HEADER BEGIN
 			</div>
 
 		</div>
-
 	</div>
-
 
 </header>
 <!-- ==============================
 HEADER END
 ============================== -->
+
+
+<!-- ==============================
+MAIL BEGIN
+============================== -->
+<div class="mail">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<form action="mail.php" class="form form_top">
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Лендинг ремонт техники">
+					<input type="hidden" name="admin_email" value="tawr.09@mail.ru">
+					<input type="hidden" name="form_subject" value="форма заявки">
+					<!-- END Hidden Required Fields -->
+					
+<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="shedule">расписание рейсов</a>
+					</div>
+
+					<div class="col-lg-3">
+						<select name="Программа" required>
+							<option selected disabled value="">Выберите программу</option>
+							<option value="Новогодний заезд">Новогодний заезд</option>
+							<option value="Рождественские каникулы">Рождественские каникулы</option>
+						</select>
+					</div>
+						
+					<div class="col-lg-3">
+						<input type="tel" name="Телефон" placeholder="Укажите телефон" maxlength="20" pattern="[^A-Za-zА-Яа-яЁё]{3,20}" required>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="btn-wrap">
+							<input type="submit" value="Забронировать" class="btn form_top-btn">
+						</div>
+					</div>
+</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ==============================
+MAIL END
+============================== -->
+
+
+<section class="about">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-6 col-md-12">
+				<div class="img-wrap">
+					<img src="img/hotel.jpg" alt="Об отеле" class="img-responsive">
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12">
+				<div class="hotel">
+					<h3>Об отеле</h3>
+					<p class="location"><span class="bold">Расположение:</span> внешняя сторона Большого галактического кольца 72 км, 25 световых лет от местного центра галактики Млечный путь.<br><span class="bold">GPS координаты стартовой площадки:</span> <span class="grey">55°52'19.05"N/37°24'29.89"E</span><br><span class="bold">Класс корабля:</span> 4* звезды. <span class="bold">Стиль:</span> Арт-деко. </p>
+					<p class="timetable">Расписание Новогодних и Рождественских рейсов (отправление/прибытие/время в пути): </p>
+					<ul class="timetable_list">
+						<li>31.12.17 – 02.01.18 (3 дн./2 н.)</li>
+						<li>02.01.18 – 05.01.18 (4 дн./3 н.)</li>
+						<li>05.01.18 – 08.01.18 (4 дн./3 н.).</li>
+					</ul>
+					<p class="atemption">(!) Звездолёт не резиновый, количество мест ограничено</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="advantages">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h3>Наши преимущества</h3>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/best_price_adv.png" alt="Лучшая цена">
+					<figcaption>«Гарантия лучшей цены». Всё, как у разумных обитателей Вселенной - компенсируем разницу, подарим подарки, закажем пиццу, разольём по бокалам…</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/allinclusive_adv.png" alt="Все включено">
+					<figcaption>«Всё включено» - никаких дополнительных оплат</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/moscov_adv.png" alt="Близко к столице">
+					<figcaption>Близость к Москве, развитая инфраструктура, сервис отеля 4*</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/credit_adv.png" alt="Рассрочка платежа">
+					<figcaption>Рассрочка платежа</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/refund_adv.png" alt="Возврат 100% оплаты при отказе">
+					<figcaption>Возврат 100% оплаты при отказе от услуги не позднее 5-ти рабочих дней до начала заезда!!!</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/procent_adv.png" alt="Доплата">
+					<figcaption>Доплата за одноместноеразмещение всего 20%!!!</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/18plus_adv.png" alt="18+">
+					<figcaption>Специальная программы 3D Tinder 18+</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/kinder_prog_adv.png" alt="Программы для детей">
+					<figcaption>Специальные программы для детей</figcaption>
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-3 ml-lg-auto">
+				<figure>
+					<img src="img/spa_adv.png" alt="Включено в стоимость">
+					<figcaption>СПА, бассейны (взрослый и детский), сауны, хамам, включены в стоимость</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/kinders2_free_adv.png" alt="Дети до 2-х лет - бесплатно">
+					<figcaption>Дети до 2-х лет включительно – бесплатно</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-3">
+				<figure>
+					<img src="img/teleport.png" alt="<Бесплатная доставка от метро">
+					<figcaption>Бесплатный телепорт от метро Сходненская</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
 
 
 

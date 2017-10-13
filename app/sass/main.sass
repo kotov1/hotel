@@ -11,21 +11,21 @@
 		-moz-box-sizing: border-box
 		box-sizing: border-box
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+// *::-webkit-input-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*:-moz-placeholder
-	color: #666
-	opacity: 1
+// *:-moz-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*::-moz-placeholder
-	color: #666
-	opacity: 1
+// *::-moz-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
+// *:-ms-input-placeholder
+// 	color: #666
+// 	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -52,7 +52,7 @@ body
 	max-width: 100%
 	height: auto
 	
-
+// ====================================== мои общие стили ====================================
 // a:hover
 .a_hover
 	a
@@ -82,7 +82,8 @@ body
 // adaptive menu begin	
 .toggle-menu 
 	display: none
-	position: relative
+	position: fixed
+	z-index: 9
 	right: 15px
 	top: 30px
 	width: 35px
@@ -174,24 +175,34 @@ body
 			
 			h1
 				opacity: 0
-				transform: translate3d(200px, 0, 0)
+				transform: translate3d(300px, 0, 0)
 				
 			h2
 				opacity: 0
-				transform: translate3d(200px, 0, 0)
+				transform: translate3d(300px, 0, 0)
+
+			p
+				transform: translate3d(300px	, 0, 0) scaleY(1.5)
+				transition: transform .7s ease .2s				
 				
 
 		&.active
 			.slide
 				h1
 					opacity: 1
-					transform: translate3d(0, 0, 0)
-					transition: all .7s ease .2s
+					transform: translate3d(0, 0, 0) scaleY(2)
+					transition: transform .7s ease .2s
+					line-height: .9
 					
 				h2
+					margin-top: 100px 
 					opacity: 1
-					transform: translate3d(0, 0, 0)
-					transition: all .7s ease .5s	
+					transform: translate3d(0, 0, 0) scaleY(1.5)
+					transition: transform .7s ease .3s
+
+				p
+					transform: translate3d(0, 0, 0) scaleY(1.5)
+					transition: transform .7s ease .2s					
 					
 
 
@@ -209,13 +220,13 @@ h2
 	letter-spacing: -5px 
 	width: 100%
 
-
-
-
+.bold
+	font-weight: bold
 
 // ==============================
 // GENERAL STYLES END
 // ==============================
+
 
 
 // ==============================
@@ -223,9 +234,9 @@ h2
 // ==============================
 .header__topLine
 	// position: fixed
+	// z-index: 3
 	width: 100%
-	// background: url(../img/header_top_bg.png) repeat-x
-	// background-size: cover 
+	// background: url(../img/nice_snow.png)
 	
 	.logo-wrap
 		height: 95px
@@ -261,13 +272,12 @@ h2
 
 
 .slider
-	// height: 100%
 	position: relative
 	
 	.slide
 		min-height: 968px
 		height: 1px
-		// overflow: hidden
+		
 	
 		&__img
 			background: url(../img/header_slide1.jpg) no-repeat
@@ -285,16 +295,16 @@ h2
 				left: 0
 				background-color: rgba(0,0,0,.3)  
 				
-		&__img-2
+		&2__img
 			background-image: url(../img/header_slide2.jpg)  
 			
 			&::before  
 				background-color: rgba(0,0,0,.7)  			
 				
-		&__img-3
+		&3__img
 			background-image: url(../img/header_slide3.jpg)
 				
-		&__img-4
+		&4__img
 			background-image: url(../img/header_slide4.jpg)
 
 					
@@ -302,23 +312,19 @@ h2
 	
 .slide_heading
 	width: 100%
-	// height: 100%
 	position: absolute
 	z-index: 1 
 	text-align: center
 	
 
-.slide_heading-1
-	top: 50%
-	left: 50%
-	transform: translate(-50%,-50%)
+
+.slide1_heading
+	top: 45%
 
 
-.slide_heading-2
+.slide2_heading
 	height: 100%
 	position: static
-	font-size: 2em
-	color: red 
 	 
 
 	.heading_top
@@ -326,36 +332,240 @@ h2
 		position: absolute
 		top: 0
 		z-index: 2
-			
+				
+		.date
+			margin-top: 30px 
+			color: #FDDD09
+			font:  3.125em 'proxima-black', sans-serif
+		.dear-friends
+			margin-top: 20px 
+			font:  2.5em 'proxima-semibold', sans-serif
+			color: #f1f1f0 
+
+
 	.heading_bottom
 		width: 100%
 		position: absolute
 		bottom: 0
 		z-index: 2
+		
+		.text
+			margin-bottom: 40px 
+			font-size: 1.5625em
+			line-height: 1.2
+			color: #F1F1F0
+		.congratulation
+			font: 2.1875em 'proxima-semibold', sans-serif
+			color: #FDDD09 
 
-.slide_heading-3
-	top: 50%
-	font-size: 1em
-	color: red 
 
-.slide_heading-4
-	top: 50%
-	color: red
+
+
+.slide3_heading, .slide4_heading
 	
+	h1
+		font-size: 2.5em
+		margin-top: -20px 
+
+	.heading_subtittle
+		margin-top: 60px 
+		font: 2.3125em 'proxima-bold', sans-serif 
+		text-transform: uppercase
+		color: #ffcc00 
+		
+	.heading_hit
+		font: 2.3135em 'proxima-semibold', sans-serif
+		color: #ffcc00 
+		
+	.heading_date
+		margin-top: 50px 
+		font: 1.875em 'proxima-semibold', sans-serif
+		color: #FFF 
+		
 	+
 		.heading_address
+			font-size:  1.5625em //25/16
+			color: #FFF 
 			position: absolute
 			bottom: 0
-			left: 50%
-			transform: translateX(-50%)
-			color: red  
+			left: 0
+			right: 0
+			text-align: center
 
+.slide3_heading
+	top: 50%
+
+	.heading_subtittle, .heading_hit
+		text-shadow: 2px 0 0px #fff
+
+
+.slide4_heading
+	top: 40%
+	
+	.heading_subtittle, .heading_hit
+		text-shadow: 2px 2px 0px #25396c
+
+	.heading_subtittle
+		margin-top: 100px 
 
 // ==============================
 // HEADER END
 // ==============================
 
 
+// ==============================
+// ЕБАНАЯ ФОРМА
+// ==============================
+
+.mail
+	min-height: 130px
+	// height: 1px
+	background-color: rgba(0,0,0,.1) 
+	display: flex
+	align-items: center 
+	
+	form
+		height: 100%
+		color: #25396c
+		font-size: 1.2em 
+		
+		.shedule
+			position: relative
+			padding: 15px
+			font-family: 'proxima-semibold', sans-serif
+			color: inherit
+			text-transform: uppercase
+			display: inline-block
+			transform: $scale
+			
+			&::before
+				// content: ""
+				display: inline-block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				right: 0
+				background: url(../img/login-symbol.png)
+				background-repeat: no-repeat
+				background-position: 100% 50%
+				background-size: 20% 70%
+			
+
+		// .input-wrap
+		// 	display: flex
+		// 	justify-content: space-between
+		// 	align-items: center 
+
+		select, input
+			background-color: #F6F0E3
+			border: 2px solid #35405c
+			border-radius: 4px 
+			
+
+		select
+			z-index: -1 
+			// height: 40px 
+			// margin-right: 2%
+			// padding: 0 40px 0 10px
+			transform: $scale
+			color: #25396c
+			background-image: url(../img/select_arrow.png)
+			background-repeat: no-repeat
+			background-position: 95% 50%
+			background-size: 7% 20%
+			white-space: nowrap
+			
+			/*for WebKit*/
+			-webkit-appearance: none
+			/* for FF */
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			/* for IE */
+			-ms-appearance: none!important
+			appearance: none!important
+
+			option
+				color: #25396c
+				overflow: hidden
+  				text-overflow: ellipsis
+				transform: $scale
+				max-width: 200px
+			
+		
+
+		input[type="tel"]
+			// height: 60px 
+			padding: 15px 0 15px 10px
+			
+			&*::-webkit-input-placeholder
+				color: #25396c
+				transform: $scale
+
+			&*:-moz-placeholder
+				color: #25396c
+				transform: $scale
+
+			&*::-moz-placeholder
+				color: #25396c
+				transform: $scale
+
+			&*:-ms-input-placeholder
+				color: #25396c
+				transform: $scale
+				
+			&:focus
+			
+				&*::-webkit-input-placeholder
+					color: transparent
+
+				&*:-moz-placeholder
+					color: transparent
+
+				&*::-moz-placeholder
+					color: transparent
+
+				&*:-ms-input-placeholder
+					color: transparent
+			
+		.btn-wrap
+			height: 60px
+			border: 1px solid transparent
+			transform: translateZ(0)
+			position: relative
+			z-index: 10
+
+			&::before
+				// content: ""
+				display: inline-block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				right: 0
+				background: url(../img/login-symbol.png)
+				background-repeat: no-repeat
+				background-position: 0% 50%
+				background-size: 20% 70%
+			
+		.btn
+			display: inline-block
+			// height: 40px
+			padding: 0px 40px
+			text-transform: uppercase
+			color: #fff
+			background-color: #35405C 
+			transform: $scale
+			cursor: pointer
+			border: none 
+			
+
+			
+			&:hover
+				background-color: #191f2d 
+			
+// ЕБАНАЯ ФОРМА
 
 
 
@@ -363,6 +573,121 @@ h2
 
 
 
+
+
+.about
+	background-color: #F6F0E3 
+	.img-wrap
+		position: relative
+		overflow: hidden 
+		
+		img
+			max-width: 130%
+			
+			
+
+		
+		&::before
+			content: ""
+			display: block
+			width: 95%
+			height: 95%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			border: 2px solid #fff
+			border-radius: 4px
+		
+		&::after
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: url(../img/sticks.png) no-repeat
+			z-index: 20
+			background-position: 0 0  
+
+	.hotel
+		padding: 10px 0
+		color: #25396C 
+		background-image: url(../img/ufo.png)
+		background-repeat: no-repeat
+		background-position: 50%  
+		
+		h3
+			font: 1.875em 'proxima-semibold', sans-serif //30/16
+			text-transform: uppercase
+			
+		.location
+			font-size: 1.25em //20/16
+			line-height: 1.2 
+			
+		.timetable
+			margin-top: 50px 
+			padding-right: 5% 
+			font-size: 1.4375em //23/16
+			text-align: center
+			font-weight: bold
+			line-height: 1.1
+			
+		ul.timetable_list
+			margin: 0
+			margin-bottom: 20px 
+			padding: 0
+			list-style-type: none
+			font-size: 1.25em //20/16
+			
+			li
+				padding-left: 40px
+				background: url(../img/list-item.png) no-repeat 0 50%  
+
+
+		.atemption
+			color: #C20000
+			font: 1.2em 'proxima-bold', sans-serif
+
+		.grey
+			color: #747475 
+
+
+
+
+
+
+
+.advantages
+	padding-top: 50px 
+	position: relative
+	color: #F6F0E3 
+	background: url(../img/advances_bg.jpg) no-repeat
+	
+	&::before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.6)  
+		
+
+	h3
+		margin-bottom: 20px 
+		text-align: right
+		font: 1.875em 'proxima-semibold', sans-serif
+		text-transform: uppercase
+		
+	figure
+		text-align: center
+	
+	figcaption
+		margin-top: 10px 
+		line-height: 1.2
 
 
 
