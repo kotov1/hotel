@@ -11,21 +11,21 @@
 		-moz-box-sizing: border-box
 		box-sizing: border-box
 
-// *::-webkit-input-placeholder
-// 	color: #666
-// 	opacity: 1
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
 
-// *:-moz-placeholder
-// 	color: #666
-// 	opacity: 1
+*:-moz-placeholder
+	color: #666
+	opacity: 1
 
-// *::-moz-placeholder
-// 	color: #666
-// 	opacity: 1
+*::-moz-placeholder
+	color: #666
+	opacity: 1
 
-// *:-ms-input-placeholder
-// 	color: #666
-// 	opacity: 1
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -52,8 +52,10 @@ body
 	max-width: 100%
 	height: auto
 	
-// ====================================== мои общие стили ====================================
-// a:hover
+
+// ====================================== MY GENERAL STYLES ====================================
+
+// ------------------------------- .top-line a:hover ----------------------------
 .a_hover
 	a
 		position: relative
@@ -77,13 +79,14 @@ body
 			&::after
 				visibility: visible
 				transform: scaleX(1)
+// ------------------------------- .top-line a:hover end ----------------------------
 
 
-// adaptive menu begin	
+// ------------------------------- adaptive menu ----------------------------
 .toggle-menu 
 	display: none
 	position: fixed
-	z-index: 9
+	z-index: 99
 	right: 15px
 	top: 30px
 	width: 35px
@@ -128,46 +131,10 @@ body
 
 .toggle-menu.on + .nav
 	display: block
-	
-// adaptive menu end
+// ------------------------------- adaptive menu end ----------------------------
 
 // ------------------------------- slider ----------------------------
 .owl-carousel
-
-	.owl-nav 
-		> div
-			display: none
-
-			width: 40px
-			height: 40px
-			position: absolute
-			top: 39%
-			background: url('../img/slide-prev.png') no-repeat
-			background-size: 100% 
-			opacity: 1
-		.owl-prev
-			left: 10px
-		.owl-next
-			right: 10px
-			background-image: url("../img/slide-next.png") 
-			
-	.owl-dots
-		display: none
-
-		position: relative
-		margin-top: -20px 
-		text-align: center
-		
-		.owl-dot
-			display: inline-block
-			margin-left: 10px 
-			width: 8px
-			height: 8px
-			background-color: rgba(255,255,255,.9)
-			&:hover
-				// background-color: $accent-color
-			&.active
-				// background-color: $accent-color
 
 	.owl-item
 
@@ -205,7 +172,6 @@ body
 					transition: transform .7s ease .2s					
 					
 
-
 	
 h1
 	font: 2.75em 'proxima-semibold', sans-serif
@@ -223,15 +189,10 @@ h2
 .bold
 	font-weight: bold
 
-// ==============================
-// GENERAL STYLES END
-// ==============================
+// ====================================== MY GENERAL STYLES END ====================================
 
 
-
-// ==============================
-// HEADER BEGIN
-// ==============================
+// ====================================== HEADER BEGIN ====================================
 .header__topLine
 	// position: fixed
 	// z-index: 3
@@ -245,7 +206,6 @@ h2
 		align-items: center
 
 
-	
 .nav
 	position: relative
 	height: 95px
@@ -308,15 +268,12 @@ h2
 			background-image: url(../img/header_slide4.jpg)
 
 					
-		
-	
 .slide_heading
 	width: 100%
 	position: absolute
 	z-index: 1 
 	text-align: center
 	
-
 
 .slide1_heading
 	top: 45%
@@ -357,8 +314,6 @@ h2
 		.congratulation
 			font: 2.1875em 'proxima-semibold', sans-serif
 			color: #FDDD09 
-
-
 
 
 .slide3_heading, .slide4_heading
@@ -407,67 +362,80 @@ h2
 
 	.heading_subtittle
 		margin-top: 100px 
-
-// ==============================
-// HEADER END
-// ==============================
+// ====================================== HEADER END ====================================
 
 
-// ==============================
-// ЕБАНАЯ ФОРМА
-// ==============================
-
+// ====================================== MAIL START ====================================
 .mail
 	min-height: 130px
-	// height: 1px
+	height: 1px
 	background-color: rgba(0,0,0,.1) 
 	display: flex
 	align-items: center 
 	
-	form
+
+	.form
 		height: 100%
 		color: #25396c
-		font-size: 1.2em 
-		
-		.shedule
+		font-size: 1.2em
+		position: relative
+			
+		&::after
+			content: ""
+			display: inline-block
+			width: 130px
+			height: 116px
+			background: url(../img/cracozabr_topform.png) no-repeat
+			position: absolute
+			top: -98px
+			right: -56px
+			z-index: 10
+
+
+		.shedule-wrap
+			height: 60px
 			position: relative
-			padding: 15px
+
+			&::before
+				content: ""
+				display: inline-block
+				width: 36px
+				height: 44px
+				position: absolute
+				top: 50%
+				right: -10px
+				transform: translateY(-50%)
+				background: url(../img/login-symbol.png)
+				background-repeat: no-repeat
+				background-size: 36px 44px
+				
+		a.shedule
+			position: absolute
+			top: 17px
 			font-family: 'proxima-semibold', sans-serif
 			color: inherit
 			text-transform: uppercase
 			display: inline-block
 			transform: $scale
-			
-			&::before
-				// content: ""
-				display: inline-block
-				width: 100%
-				height: 100%
-				position: absolute
-				top: 0
-				right: 0
-				background: url(../img/login-symbol.png)
-				background-repeat: no-repeat
-				background-position: 100% 50%
-				background-size: 20% 70%
-			
 
-		// .input-wrap
-		// 	display: flex
-		// 	justify-content: space-between
-		// 	align-items: center 
 
 		select, input
 			background-color: #F6F0E3
 			border: 2px solid #35405c
 			border-radius: 4px 
-			
+
+		.select-wrap
+			position: relative
+			height: 60px
 
 		select
-			z-index: -1 
-			// height: 40px 
-			// margin-right: 2%
-			// padding: 0 40px 0 10px
+			display: inline-block
+			position: absolute
+			top: 10px
+			left: 0
+			height: 40px 
+			padding: 0 14% 0 10px
+			width: 260px
 			transform: $scale
 			color: #25396c
 			background-image: url(../img/select_arrow.png)
@@ -475,7 +443,8 @@ h2
 			background-position: 95% 50%
 			background-size: 7% 20%
 			white-space: nowrap
-			
+			overflow: hidden
+			outline: none
 			/*for WebKit*/
 			-webkit-appearance: none
 			/* for FF */
@@ -485,38 +454,36 @@ h2
 			/* for IE */
 			-ms-appearance: none!important
 			appearance: none!important
-
-			option
-				color: #25396c
-				overflow: hidden
-  				text-overflow: ellipsis
-				transform: $scale
-				max-width: 200px
-			
+			&::-ms-expand
+				display: none
 		
 
+		.tel-wrap
+			height: 60px
+
 		input[type="tel"]
-			// height: 60px 
-			padding: 15px 0 15px 10px
+			display: inline-block
+			height: 40px 
+			padding-left: 10px
+			width: 255px
+			position: absolute
+			top: 10px
+			left: 10px
+			transform: $scale
 			
 			&*::-webkit-input-placeholder
 				color: #25396c
-				transform: $scale
 
 			&*:-moz-placeholder
 				color: #25396c
-				transform: $scale
 
 			&*::-moz-placeholder
 				color: #25396c
-				transform: $scale
 
 			&*:-ms-input-placeholder
 				color: #25396c
-				transform: $scale
 				
 			&:focus
-			
 				&*::-webkit-input-placeholder
 					color: transparent
 
@@ -529,30 +496,32 @@ h2
 				&*:-ms-input-placeholder
 					color: transparent
 			
+
 		.btn-wrap
 			height: 60px
-			border: 1px solid transparent
-			transform: translateZ(0)
+			padding-left: 35px 
 			position: relative
 			z-index: 10
 
 			&::before
-				// content: ""
+				content: ""
 				display: inline-block
-				width: 100%
-				height: 100%
+				width: 36px
+				height: 44px
 				position: absolute
-				top: 0
-				right: 0
+				top: 50%
+				left: -15px
+				transform: translateY(-50%)
 				background: url(../img/login-symbol.png)
 				background-repeat: no-repeat
-				background-position: 0% 50%
-				background-size: 20% 70%
+				background-size: 36px 44px
 			
 		.btn
 			display: inline-block
-			// height: 40px
-			padding: 0px 40px
+			position: absolute
+			top: 10px
+			height: 40px
+			padding: 0 40px
 			text-transform: uppercase
 			color: #fff
 			background-color: #35405C 
@@ -560,21 +529,13 @@ h2
 			cursor: pointer
 			border: none 
 			
-
-			
 			&:hover
 				background-color: #191f2d 
-			
-// ЕБАНАЯ ФОРМА
+// ====================================== MAIL END ====================================			
 
 
 
-
-
-
-
-
-
+// ==================================== SECTION ABOUT START ==================================
 .about
 	background-color: #F6F0E3 
 	.img-wrap
@@ -584,8 +545,6 @@ h2
 		img
 			max-width: 130%
 			
-			
-
 		
 		&::before
 			content: ""
@@ -652,18 +611,18 @@ h2
 
 		.grey
 			color: #747475 
+// ==================================== SECTION ABOUT END ==================================
 
 
 
-
-
-
-
+// ================================== SECTION ADVANTAGES START ================================
 .advantages
+	margin-top: 40px
 	padding-top: 50px 
 	position: relative
 	color: #F6F0E3 
 	background: url(../img/advances_bg.jpg) no-repeat
+	background-size: cover 
 	
 	&::before
 		content: ""
@@ -673,7 +632,37 @@ h2
 		position: absolute
 		top: 0
 		left: 0
-		background-color: rgba(0,0,0,.6)  
+		background-color: rgba(0,0,0,.6)
+		
+	&::after
+		content: ""
+		display: inline-block
+		width: 210px
+		height: 207px
+		position: absolute
+		left: 10%
+		bottom: 0
+		background: url(../img/cracozabr_advances.png) no-repeat
+		background-size: 100% 100%
+	
+	.all-inclusive
+		width: 100%
+		position: absolute
+		top: -50px
+		padding: 20px 0 
+		font: 2.5em 'proxima-semibold', sans-serif //40/16
+		color: #F6F0E3 
+		text-align: center
+		background: url(../img/ribbon.png) no-repeat
+		background-position: 50% 8px
+		background-size: 100% 100%
+		z-index: 11 
+		
+		p
+			margin: 0
+		
+		.accent
+			text-transform: uppercase
 		
 
 	h3
@@ -688,6 +677,69 @@ h2
 	figcaption
 		margin-top: 10px 
 		line-height: 1.2
+// ================================== SECTION ADVANTAGES END ================================
+
+
+// ================================== SECTION ACHIEVEMENTS START ================================
+.achievements
+	padding: 100px 0
+	background: url(../img/maxresdefault-min.jpg) no-repeat
+	background-size: 150% 220%
+	background-position: 50% -300px
+	position: relative
+	
+	&::before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.5)
+	
+	.achievments_item
+		text-align: center
+
+	.achievments_number
+		font: 6.25em 'proxima-black', sans-serif //100/16
+		color: #FED221 
+		span
+			font-size: .5em 
+
+	.achievments_descr
+		font: 2.2em 'proxima-semibold', sans-serif
+		color: #FFF 
+		.accent
+			color: #FED221 
+
+	.mail
+		margin-top: 30px 
+		background: transparent
+		
+		form
+			&::after
+				display: none
+				
+			a.shedule
+				color: #FFF 
+		.btn-wrap
+
+
+			.btn
+				background: #C62024 url(../img/btn-border.png) no-repeat
+				background-size: 95% 80%
+				background-position: 5px 4px
+
+				&:hover
+					background-color: #8A1013 
+// ================================== SECTION ACHIEVEMENTS END ===============================
+
+
+
+
+
+
 
 
 
