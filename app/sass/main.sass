@@ -382,17 +382,6 @@ h1
 		font-size: 1.2em
 		position: relative
 			
-		&::after
-			content: ""
-			display: inline-block
-			width: 130px
-			height: 116px
-			background: url(../img/cracozabr_topform.png) no-repeat
-			position: absolute
-			top: -98px
-			right: -56px
-			z-index: 10
-
 
 		.shedule-wrap
 			height: 60px
@@ -533,6 +522,17 @@ h1
 			
 			&:hover
 				background-color: #191f2d 
+	.form_top		
+		&::after
+			content: ""
+			display: inline-block
+			width: 130px
+			height: 116px
+			background: url(../img/cracozabr_topform.png) no-repeat
+			position: absolute
+			top: -98px
+			right: -56px
+			z-index: 10
 // ====================================== MAIL END ====================================			
 
 
@@ -689,6 +689,7 @@ h1
 	background-size: 150% 220%
 	background-position: 50% -300px
 	position: relative
+	box-shadow: 0 1px 20px #000
 	
 	&::before
 		content: ""
@@ -720,14 +721,10 @@ h1
 		background: transparent
 		
 		form
-			&::after
-				display: none
-				
 			a.shedule
 				color: #FFF 
+				
 		.btn-wrap
-
-
 			.btn
 				background: #C62024 url(../img/btn-border.png) no-repeat
 				background-size: 95% 80%
@@ -747,6 +744,7 @@ h1
 	background: url(../img/flat.jpg) no-repeat
 	background-size: 150% 300%
 	background-position: 50% 62%
+	box-shadow: 0 1px 20px #000
 	
 	&::before
 		content: ""
@@ -757,6 +755,17 @@ h1
 		top: 0
 		left: 0
 		background-color: rgba(0,0,0,.5)
+		
+	&::after
+		content: ""
+		display: inline-block
+		width: 231px
+		height: 276px
+		position: absolute
+		right: 5%
+		bottom: 0
+		background: url(../img/cracozabr_where.png) no-repeat
+		background-size: 100% 100%
 		
 	h2
 		font: 2.5em 'proxima-semibold', sans-serif //40/16
@@ -776,6 +785,114 @@ h1
 			font-size: 1.25em //20/16  
 
 // ================================== SECTION WHERE END ===============================
+
+
+.roomGalery
+	margin-top: 20px
+	
+	.col-lg-4
+		padding-right: 5px
+		padding-left: 5px 
+		padding-bottom: 10px 
+
+	.room-wrap
+		height: 360px 
+		min-width: 360px
+		overflow: hidden
+
+	.room
+		position: relative
+		height: 100%
+		// max-width: 100%
+		
+	.room1-wrap
+		.room
+			left: -30%
+	.room2-wrap
+		.room
+			left: -30%
+	.room3-wrap
+		.room
+			left: -58%
+	.room4-wrap
+		.room
+			left: -19%
+	.room5-wrap
+		.room
+			height: 120%
+			left: -19%
+	.room6-wrap
+		.room
+			left: -72%
+	.room7-wrap
+		.room
+			left: -10%
+	.room8-wrap
+		.room
+			left: -10%
+	.room9-wrap
+		.room
+			left: -10%
+
+
+.payment
+	padding: 30px 0 70px
+	background: url(../img/planet.jpg) no-repeat
+	background-size: 150% 200%
+	background-position: 50% 70% 
+	position: relative
+	box-shadow: 0 1px 20px #000
+	
+	&::before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.5)
+	
+	h2
+		margin-bottom: 50px 
+		font: 2.5em 'proxima-semibold', sans-serif //40/16
+		text-transform: uppercase
+		line-height: 1.2
+		color: #f6f0e3
+		text-align: center
+		
+	.img-wrap
+		text-align: center
+
+	.payment_item
+		margin-top: 10px 
+		font-size: 1.2em
+		color: #f6f0e3
+		text-align: center
+		line-height: 1.2 
+
+
+	.mail
+		margin-top: 30px 
+		background: transparent
+				
+		.btn-wrap
+			.btn
+				background: #C62024 url(../img/btn-border.png) no-repeat
+				background-size: 95% 80%
+				background-position: 5px 4px
+
+				&:hover
+					background-color: #8A1013 
+
+
+
+
+
+
+
+
+
 
 
 
