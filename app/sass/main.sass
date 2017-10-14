@@ -179,12 +179,7 @@ h1
 	color: #F6F0E3 
 	letter-spacing: -1px 
 	
-h2
-	font:  4.0625em 'proxima-bold', sans-serif
-	color: #ffcc00
-	text-shadow: 3px 3px 0px #25396c  
-	letter-spacing: -5px 
-	width: 100%
+
 
 .bold
 	font-weight: bold
@@ -233,6 +228,13 @@ h2
 
 .slider
 	position: relative
+	
+	h2
+		text-shadow: 3px 3px 0px #25396c  
+		font:  4.0625em 'proxima-bold', sans-serif
+		color: #ffcc00
+		letter-spacing: -5px 
+		width: 100%
 	
 	.slide
 		min-height: 968px
@@ -737,10 +739,43 @@ h2
 
 
 
+// ================================== SECTION WHERE START ================================
 
+.where
+	position: relative
+	padding: 20px 0
+	background: url(../img/flat.jpg) no-repeat
+	background-size: 150% 300%
+	background-position: 50% 62%
+	
+	&::before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.5)
+		
+	h2
+		font: 2.5em 'proxima-semibold', sans-serif //40/16
+		text-transform: uppercase
+		line-height: 1.2
+		color: #ffcc00
+		text-align: center
+		
+	&_content
+		color: #F6F0E3
+		line-height: 1.3
+		
+		h4
+			margin-bottom: 5px
+			font: 1.5625em 'proxima-semibold', sans-serif //25/16
+		p
+			font-size: 1.25em //20/16  
 
-
-
+// ================================== SECTION WHERE END ===============================
 
 
 
