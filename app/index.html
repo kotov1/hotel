@@ -364,7 +364,7 @@
 <!-- ================================== SECTION ADVANTAGES END ================================ -->
 
 
-<section style="height: 500px">123</section>
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
 
 
 <!-- ================================ SECTION ACHIEVEMENTS START ============================== -->
@@ -450,7 +450,7 @@
 </section>
 <!-- ================================ SECTION ACHIEVEMENTS END ============================== -->
 
-<section style="height: 500px">123</section>
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
 
 <!-- ================================== SECTION WHERE START ================================ -->
 
@@ -478,8 +478,7 @@
 
  <!-- ================================== SECTION WHERE END =============================== -->
 
-<!-- <section style="height: 500px">123</section> -->
-
+ <!-- ================================== ROOM GALERY START =============================== -->
 <section class="roomGalery">
 	<div class="container">
 		<div class="row">
@@ -502,8 +501,6 @@
 				</div>
 			</div>
 
-<!-- 		</div>
-		<div class="row"> -->
 			<div class="col-lg-4 col-md-6">
 				<div class="room-wrap room4-wrap">
 					<img src="img/room4.jpg" alt="Hotel room" class="room">
@@ -522,8 +519,6 @@
 				</div>
 			</div>
 
-<!-- 		</div>
-		<div class="row"> -->
 			<div class="col-lg-4 col-md-6">
 				<div class="room-wrap room7-wrap">
 					<img src="img/room7.jpg" alt="Hotel room" class="room">
@@ -545,10 +540,12 @@
 		</div>
 	</div>
 </section>
+ <!-- ================================== ROOM GALERY END =============================== -->
 
-<section style="height: 500px">123</section>
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
 
-<section class="payment" id="pay">
+ <!-- ================================ SECTION PAYMENT START ============================= -->
+<section class="payment">
 	<div class="container">
 
 		<div class="row">
@@ -561,23 +558,31 @@
 		<div class="row">
 
 			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="img-wrap"><img src="img/nonal.png" alt="Безналичный платеж"></div>
-				<p class="payment_item">Безналичный платеж по выставленному счету</p>
+				<figure>
+					<img src="img/nonal.png" alt="Безналичный платеж">
+					<figcaption>Безналичный платеж по выставленному счету</figcaption>
+				</figure>
 			</div>
 
 			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="img-wrap"><img src="img/withcard.png" alt="Перевод на карту"></div>
-				<p class="payment_item">Перевод на корпоративную карту компании</p>
+				<figure>
+					<img src="img/withcard.png" alt="Перевод на карту">
+					<figcaption>Перевод на корпоративную карту компании</figcaption>
+				</figure>
 			</div>
 
 			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="img-wrap"><img src="img/nalinoffice.png" alt="Наличными в офисе"></div>
-				<p class="payment_item">Наличными в офисе</p>
+				<figure>
+					<img src="img/nalinoffice.png" alt="Наличными в офисе">
+					<figcaption>Наличными в офисе</figcaption>
+				</figure>
 			</div>
 
 			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="img-wrap"><img src="img/tocourier.png" alt="Наличными курьер"></div>
-				<p class="payment_item">Наличными курьеру</p>
+				<figure>
+					<img src="img/tocourier.png" alt="Наличными курьер">
+					<figcaption>Наличными курьеру</figcaption>
+				</figure>
 			</div>
 
 		</div>
@@ -632,8 +637,244 @@
 	</div> <!-- mail end -->
 
 </section>
+ <!-- ================================ SECTION PAYMENT END ============================= -->
 
-<section style="height: 500px">123</section>
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
+
+ <!-- ============================== SECTION DOCS DELIVERY START =========================== -->
+<section class="docsDelivery">
+	<div class="container">
+
+		<div class="row">
+			<!-- h2 -->
+			<div class="col-12">
+				<h2>Доставка документов</h2>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<figure>
+					<img src="img/docinoffice.png" alt="Получение в офисе">
+					<figcaption>Получение в офисе</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<figure>
+					<img src="img/email.png" alt="Отправка на эл.почту Ваучеров">
+					<figcaption>Отправка на эл.почту Ваучеров (действительных при заселении в отель)</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<figure>
+					<img src="img/courier.png" alt="Доставка курьером">
+					<figcaption>Курьером (+250 руб. в пределах МКАД)</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="mail">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<form action="mail.php" class="form form_docsDelivery">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Лендинг ремонт техники">
+						<input type="hidden" name="admin_email" value="tawr.09@mail.ru">
+						<input type="hidden" name="form_subject" value="форма заявки">
+						<!-- END Hidden Required Fields -->
+						
+						<div class="row">
+
+							<div class="col-lg-6 ml-lg-auto">
+								<div class="row">
+									<div class="col-xl-6 col-lg-12">
+										<div class="select-wrap">
+											<select name="Программа" required>
+												<option selected disabled value="">Выберите программу</option>
+												<option value="Новогодний заезд">Новогодний заезд</option>
+												<option value="Рождественские каникулы">Рождественские каникулы</option>
+											</select>
+										</div>
+									</div>
+										
+									<div class="col-xl-6 col-lg-12">
+										<div class="tel-wrap">
+											<input type="tel" name="Телефон" placeholder="Укажите телефон" maxlength="20" pattern="[^A-Za-zА-Яа-яЁё]{3,20}" required>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3">
+								<div class="btn-wrap">
+									<input type="submit" value="Забронировать" class="btn form_top-btn">
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- mail end -->
+
+</section>
+ <!-- ============================== SECTION DOCS DELIVERY END =========================== -->
+
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
+
+ <!-- ============================== SECTION INFRASTRUCTURE START =========================== -->
+<section class="infrastructure">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Инфраструктура:</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5">
+				<p class="infrastructure_text">	Ресторан с европейской кухней,<br>
+													Бар, лобби бар в холле отеля,<br>
+													Банкетный зал Grand Hall,<br>
+													Бизнес-центр,<br>
+													Салон массажа,<br>
+													Охраняемая парковка,<br>
+													Два горнолыжных склона с
+													подъёмниками и прокатом
+													инвентаря (5 минут транспортом),
+													Круглосуточная стойка регистрации,
+													Room service - обслуживание номеров
+													24 часа в сутки,</p>
+			</div>
+			<div class="col-lg-5 ml-lg-auto">
+				<p class="infrastructure_text">	Этажи для некурящих,
+													Звукоизолированные номера, Сейф,
+													Камера хранения, визовый центр,
+													Бесплатный WiFi,<br>
+													Гладильная комната,<br>
+													Банкомат, прачечная.<br>
+													Конференц залы, микрофоны,
+													проекторы, экраны.<br>
+													СПА центр, бассейны, сауна, русская баня, турецкий хамам, зона отдыха.</p>
+			</div>
+		</div>
+	</div>
+</section>
+ <!-- ============================== SECTION INFRASTRUCTURE END =========================== -->
+
+
+ <!-- ================================== INFRA GALERY START =============================== -->
+<section class="infraGalery">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-12">
+				<div class="infraGalery_item infraGalery_item-1">
+					<img src="img/complex_infra.jpg" alt="Комплекс">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="infraGalery_item infraGalery_item-2">
+					<img src="img/restaurant_infra.jpg" alt="Ресторан">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="infraGalery_item infraGalery_item-3">
+					<img src="img/hall_infra.jpg" alt="Хол отеля">
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12">
+				<div class="infraGalery_item infraGalery_item-4">
+					<img src="img/jacuzzi_infra.jpg" alt="Джакузи">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<div class="infraGalery_item infraGalery_item-5">
+					<img src="img/hamam_infra.jpg" alt="Турецкая баня">
+				</div>
+			</div>
+
+			<div class="col-md-8 col-sm-12">
+				<div class="infraGalery_item infraGalery_item-6">
+					<img src="img/kidsclub_infra.jpg" alt="Детский клуб">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+ <!-- ================================== INFRA GALERY END =============================== -->
+
+<!-- DELETE --><section style="height: 500px">123</section> <!-- DELETE -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Как забронировать</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<p class="questions">По вопросам регистрации на рейсы <span class="accent">«GreenGalaxyParty2018»</span> и аккредитации на мероприятие обращаться к операторам телепортационных услуг центра <span class="accent-color">«ЗабронирОвано на..»</span>. </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-9 mx-lg-auto">
+				<p class="in-case">В случае, если вы твёрдо решили воспользоваться нашими услугами, можете отправить межзвёздное послание с вашими координатами и, хотите вы этого или нет, но мы вас обязательно найдём, аккредитуем и телепортируем на борт.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-10 ml-lg-auto">
+				<h3>Каналы связи</h3>
+				<div class="row">
+					<div class="col-lg-6">
+						<p class="tel-heading">Простой беспроводной</p>
+						<p class="tel"><a href="tel:+74955094389">+7 (495) <span>509-43-89</span></a></p>
+						<p class="tel"><a href="tel:+74955094398">+7 (495) <span>509-43-98</span></a></p>
+					</div>
+					<div class="col-lg-6">
+						<p class="hash">#GreenGalaxyParty</p>
+						<p class="site-link a_hover"><a href="http://www.greenwoodpark-hotel.ru/">www.greenwoodpark-hotel.ru</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="stamp-wrap">
+			<img src="img/stamp_footer.png" alt="Печать" class="stamp">
+		</div>
+
+		<div class="download-link">
+			<a href="">Скачать презентацию здесь</a>
+		</div>
+
+	</div>
+</footer>
+
+
+
+
 
 
 
